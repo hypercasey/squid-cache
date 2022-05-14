@@ -1,0 +1,10 @@
+services:
+  squid:
+    build: .
+    ports:
+      - "3128:3128/tcp"
+    mem_limit: 4G
+    mem_reservation: 2G
+    memswap_limit: 8G
+    image: phx.ocir.io/axmvl4uui9gb/oraclelinux/squid:latest
+    restart: always
